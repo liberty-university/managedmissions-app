@@ -10,7 +10,7 @@
           return this.config.title = "" + data.FirstName + " " + data.LastName;
         }
       },
-      tpl: '<p>Email: <tpl if="EmailAddress"><a href="mailto:{EmailAddress}">{EmailAddress}</a></tpl></p><p>Phone Number: <tpl if="PhoneNumber">{PhoneNumber}</tpl></p>'
+      tpl: '<p>Email: <tpl if="EmailAddress"><a href="mailto:{EmailAddress}">{EmailAddress}</a></tpl></p><p>Phone Number: <tpl if="PhoneNumber"><a href="tel://{[values.PhoneNumber.replace(/[^\\d]/g, \'\')]}">{PhoneNumber}</a></tpl></p>'
     }
   });
 
