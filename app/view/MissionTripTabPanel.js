@@ -49,13 +49,13 @@
         }, {
           id: 'missionTripMeetingsContainer',
           xtype: 'list',
-          itemTpl: '{Date}<br />{Description}',
+          itemTpl: '<p>{Description}</p><p>{Date}</p>',
           title: 'Meetings',
           iconCls: 'time'
         }, {
           id: 'missionTripTasksGoalsContainer',
           xtype: 'list',
-          itemTpl: '{Date}<br /><tpl if="Type == \'FinancialGoal\'">Goal: {Description}<tpl elseif="Type == \'Task\'">{Description}</tpl>',
+          itemTpl: '<p><tpl if="Type == \'FinancialGoal\'">Goal: {Description}<tpl elseif="Type == \'Task\'">{Description}</tpl></p><p>{Date}</p>',
           title: 'Tasks & Goals',
           iconCls: 'compose'
         }, {
