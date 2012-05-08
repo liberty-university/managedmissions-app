@@ -1,7 +1,7 @@
 {
   "name": "ManagedMissions",
   "indexHtmlPath": "index.html",
-  "url": "http://localhost:8001/",
+  "url": "",
   "js": [
     {
       "path": "sdk/sencha-touch.js",
