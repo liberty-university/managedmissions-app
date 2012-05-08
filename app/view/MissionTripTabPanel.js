@@ -61,7 +61,7 @@
         }, {
           id: 'missionTripBudgetsContainer',
           xtype: 'container',
-          tpl: '<p>Total Goal: ${TotalGoal}</p><p>Team Budget: ${TeamBudget}</p><p>Member Budget: ${MemberBudget}</p><p>Total Budget: ${TotalBudget}</p><p>Total Expenses: ${TotalExpenses}</p><p>TotalRaised: ${TotalRaised}</p><p>Total Budget: ${TotalBudget}</p>',
+          tpl: '<p>Team Budget: ${TeamBudget}</p><p>Member Budget: ${MemberBudget}</p><p>Total Expenses: ${TotalExpenses}</p><p>Total Raised: ${TotalRaised}</p><p>Total Budget: ${TotalBudget}</p>',
           title: 'Budget',
           iconCls: 'cashier'
         }
