@@ -19,15 +19,7 @@
         }
       }
     },
-    onMissionTripTabPanelUpdateData: function(component, data, eOpts) {
-      var proxy, store;
-      store = Ext.getStore('Members');
-      proxy = store.getProxy();
-      if (proxy.config.extraParams.missionTripId !== data.MissionTripId) {
-        proxy.config.extraParams.missionTripId = data.MissionTripId;
-        return store.load();
-      }
-    },
+    onMissionTripTabPanelUpdateData: function(component, data, eOpts) {},
     onMissionTripMembersListDisclose: function(list, record, target, index, e, eOpts) {
       var missionTripMemberDetailsContainer, missionTripsNavigationView;
       missionTripsNavigationView = this.getMissionTripsNavigationView();

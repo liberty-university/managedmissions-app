@@ -45,11 +45,18 @@
       }
     },
     onMissionTripsListDisclose: function(list, record, target, index, e, eOpts) {
-      var missionTripTabPanel, missionTripsNavigationView;
+      var missionTripTabPanel, missionTripsNavigationView, proxy, store;
       missionTripsNavigationView = this.getMissionTripsNavigationView() || Ext.create('ManagedMissions.view.MissionTripsNavigationView');
       Ext.Viewport.setActiveItem(missionTripsNavigationView);
       missionTripTabPanel = this.getMissionTripTabPanel() || Ext.create('ManagedMissions.view.MissionTripTabPanel');
       missionTripTabPanel.setRecord(record);
+      store = Ext.getStore('Members');
+      proxy = store.getProxy();
+      if (proxy.config.extraParams.missionTripId !== record.data.MissionTripId) {
+        proxy.config.extraParams.missionTripId = record.data.MissionTripId;
+        store.clearData();
+        store.load();
+      }
       return missionTripsNavigationView.push(missionTripTabPanel);
     }
   });
