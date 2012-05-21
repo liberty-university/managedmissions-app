@@ -10,6 +10,8 @@ There are four components to the project.
 
 The App's code is written in CoffeeScript, which compiles directly to JavaScript. You can use the CoffeeScript in ./src/, or just edit the JavaScript directly (but be warned - if you decide to edit the JavaScript, any changes and recompilations of the CoffeeScript will overwrite the JavaScript).
 
+CoffeeScript can be compiled by running ./compile.sh
+
 ### App Source
 
 This root of this repository is the compiled JavaScript, which can run in a browser.
